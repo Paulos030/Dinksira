@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Dinksira | Green Trecous · Kids' Clothing with Heritage Photo</title>
+    <title>Dinksira | Handmade by Ethiopians · Sustainable Craft</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <!-- Font Awesome 6 -->
@@ -17,9 +16,9 @@
         }
 
         body {
-            background-color: #eef5e8;   /* soft green trecous background */
+            background-color: #fefaf5;
             font-family: 'Inter', sans-serif;
-            color: #1e2f1c;
+            color: #2c2b28;
             line-height: 1.4;
             scroll-behavior: smooth;
         }
@@ -32,20 +31,20 @@
 
         /* header */
         .site-header {
-            padding: 1.8rem 0 1rem;
-            border-bottom: 1px solid #cbdcc2;
-            background-color: #eef5e8;
+            padding: 1.5rem 0 1rem;
+            border-bottom: 1px solid #e9e0d5;
+            background-color: #fefaf5;
             position: sticky;
             top: 0;
             z-index: 100;
             backdrop-filter: blur(2px);
-            background-color: rgba(238, 245, 232, 0.96);
+            background-color: rgba(254, 250, 245, 0.96);
         }
 
         .nav-wrapper {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
         }
@@ -58,39 +57,37 @@
 
         .brand-logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            letter-spacing: -0.5px;
-            color: #2f6b2f;
+            color: #a5673f;
             text-decoration: none;
         }
 
         .brand-tagline {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #527a3b;
-            margin-top: 4px;
+            color: #8b7a6b;
         }
 
         .nav-links {
             display: flex;
-            gap: 2.2rem;
+            gap: 2rem;
             list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
-            color: #2c4628;
-            font-size: 0.95rem;
+            color: #3b2e25;
+            font-size: 0.9rem;
             transition: color 0.2s;
             cursor: pointer;
         }
 
         .nav-links a:hover, .nav-links a.active {
-            color: #3c7840;
-            border-bottom: 2px solid #8bb56a;
+            color: #b67b44;
+            border-bottom: 2px solid #dba879;
             padding-bottom: 4px;
         }
 
@@ -102,269 +99,203 @@
             display: none;
         }
 
-        /* hero & brand elements */
-        .hero {
-            padding: 4rem 0 3rem;
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(145deg, #fef5ec, #fff9f2);
+            border-radius: 48px;
+            padding: 3rem 2rem;
+            margin: 2rem 0 3rem;
             text-align: center;
+            border: 1px solid #f0e4d8;
         }
 
-        .hero-welcome {
-            font-size: 1rem;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            color: #608a48;
-            margin-bottom: 1.2rem;
-        }
-
-        .brand-name-repeat {
+        .dinksira-hero {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.6rem, 8vw, 5rem);
-            font-weight: 500;
-            color: #497e34;
-            line-height: 1.1;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 600;
+            color: #a5673f;
+            letter-spacing: 4px;
+        }
+
+        .handmade-hero {
+            font-size: 1rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #b48b6a;
+            margin-top: 0.5rem;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #a5673f;
+            margin: 2rem 0 1rem;
+            letter-spacing: 1px;
+        }
+
+        .gallery-sub {
+            text-align: center;
+            color: #8b7a6b;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
 
-        .double-brand {
+        /* Product Grids */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0e4d8;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Actual Image Styles - using the real screenshot files from GitHub */
+        .product-img {
+            background: #f5ede4;
             display: flex;
             flex-direction: column;
-            gap: 0.25rem;
-            margin: 1rem 0;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            min-height: 260px;
+            border-bottom: 1px solid #f0e4d8;
         }
 
-        .brand-description {
-            max-width: 780px;
-            margin: 2rem auto;
-            font-size: 1.2rem;
-            background: #fafff5;
-            padding: 1.6rem 2rem;
-            border-radius: 40px;
-            border: 1px solid #d4e8c4;
+        .actual-image {
+            max-width: 100%;
+            max-height: 180px;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 0.75rem;
         }
 
-        .highlight-name {
+        .brand-visual {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .brand-visual .big-text {
+            font-size: 1.4rem;
             font-weight: 600;
-            color: #3f7842;
+            color: #b87a48;
+            letter-spacing: 1px;
         }
 
-        /* story section */
+        .product-info {
+            padding: 1.2rem 1.2rem 1.5rem;
+            background: white;
+        }
+
+        .product-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: #4a3727;
+            margin-bottom: 0.3rem;
+        }
+
+        .product-desc {
+            font-size: 0.8rem;
+            color: #8b7a6b;
+            margin: 0.4rem 0;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-weight: 700;
+            color: #a5673f;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .material-badge {
+            display: inline-block;
+            background: #f8f0e8;
+            padding: 0.2rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: #8b5a35;
+            margin-top: 0.6rem;
+        }
+
         .story-section {
-            background: #e2f0d9;
-            margin: 3rem 0 2rem;
-            padding: 3rem 1.5rem;
+            background: #f4ede5;
+            margin: 2rem 0;
+            padding: 2.5rem 2rem;
             border-radius: 48px;
             text-align: center;
         }
 
         .story-quote {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(1.8rem, 5vw, 2.6rem);
+            font-size: 1.6rem;
             font-style: italic;
-            color: #3b6e2c;
+            color: #6e4e2e;
         }
 
-        /* Kids' Clothing Gallery — featuring the actual uploaded Esthetic (1).png style as a hero photo */
-        .kids-hero-photo {
-            background: #dcecd0;
-            border-radius: 48px;
-            margin: 1.5rem 0 2rem;
-            overflow: hidden;
-            box-shadow: 0 16px 28px -12px rgba(50, 70, 30, 0.2);
-            border: 1px solid #bcd4a4;
-        }
-
-        .photo-container {
-            position: relative;
-            width: 100%;
-            background: #f2f7ec;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-        }
-
-        /* main image representation from Esthetic (1).png: displays the exact DINKSIRA double-text as visual art */
-        .esthetic-photo {
-            background: linear-gradient(145deg, #cde0bd, #eef3e5);
-            border-radius: 32px;
-            padding: 2rem 3rem;
-            text-align: center;
-            width: 100%;
-            max-width: 550px;
-            margin: 0 auto;
-            box-shadow: 0 12px 20px rgba(0,0,0,0.05);
-            border: 1px solid #bcd1a6;
-        }
-
-        .esthetic-photo .photo-brand {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.2rem, 6vw, 4rem);
-            font-weight: 600;
-            color: #3b6e2c;
-            letter-spacing: 2px;
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
-
-        .photo-caption {
-            margin-top: 1rem;
-            font-size: 0.85rem;
-            color: #5f824b;
-            background: #f9fff5;
-            display: inline-block;
-            padding: 0.3rem 1.2rem;
-            border-radius: 60px;
-            font-weight: 500;
-        }
-
-        .kids-grid {
+        /* Gallery grid for all uploaded screenshots */
+        .image-gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
             margin: 2rem 0;
         }
 
-        .kids-card {
+        .gallery-img-card {
             background: white;
-            border-radius: 32px;
+            border-radius: 20px;
             overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 12px 24px -10px rgba(0,0,0,0.08);
-            cursor: pointer;
-            border: 1px solid #cde2bf;
+            border: 1px solid #f0e4d8;
+            transition: transform 0.2s;
         }
 
-        .kids-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 28px -12px rgba(60, 90, 30, 0.25);
+        .gallery-img-card:hover {
+            transform: scale(1.02);
         }
 
-        .kids-img {
-            height: 260px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-            padding: 1rem;
-            background-blend-mode: overlay;
+        .gallery-img-card img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        .photo-tag {
-            background: rgba(46, 79, 36, 0.8);
-            backdrop-filter: blur(4px);
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            color: #f5f7e9;
-            font-weight: 500;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-        }
-
-        .kids-info {
-            padding: 1.5rem;
-        }
-
-        .kids-info h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: #2a552a;
-        }
-
-        .kids-desc {
-            font-size: 0.85rem;
-            color: #3b5433;
-            margin: 0.5rem 0;
-        }
-
-        .price {
-            font-weight: 700;
-            color: #417c32;
-            margin-top: 0.6rem;
-        }
-
-        .material-badge {
-            display: inline-block;
-            background: #eaf5e2;
-            padding: 0.2rem 0.8rem;
-            border-radius: 50px;
-            font-size: 0.7rem;
-            color: #467a36;
-            margin-top: 0.7rem;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.3rem;
-            color: #3f7842;
+        .gallery-img-card .img-caption {
+            padding: 0.8rem;
             text-align: center;
-            margin: 2rem 0 0.5rem;
-        }
-
-        .section-sub {
-            text-align: center;
-            color: #5c8246;
-            margin-bottom: 2rem;
-        }
-
-        .craft-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin: 3rem 0;
-            justify-content: center;
-        }
-
-        .craft-card {
-            flex: 1;
-            min-width: 230px;
-            background: white;
-            border-radius: 32px;
-            padding: 2rem;
-            text-align: center;
-            border: 1px solid #cde2bf;
-        }
-
-        .founders {
-            background: #e0edd4;
-            border-radius: 48px;
-            padding: 2.5rem;
-            margin: 2rem 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .sustainability-note {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-
-        .sustainability-chip {
-            background: #d9e8ce;
-            padding: 0.5rem 1.6rem;
-            border-radius: 60px;
-            color: #2e632b;
+            font-size: 0.75rem;
+            color: #8b7a6b;
+            background: #fefaf5;
         }
 
         .footer {
-            border-top: 1px solid #c4dcb2;
-            padding: 2.5rem 0;
+            border-top: 1px solid #e9dfd5;
+            padding: 2rem 0;
             text-align: center;
-            color: #457a3a;
+            color: #6e5d4e;
+            font-size: 0.8rem;
         }
 
         @media (max-width: 720px) {
             .container { padding: 0 1.2rem; }
             .nav-wrapper { flex-direction: column; align-items: center; }
             .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
-            .esthetic-photo { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -375,14 +306,14 @@
         <div class="nav-wrapper">
             <div class="logo-area" id="logoHomeBtn">
                 <div class="brand-logo">DINKSIRA</div>
-                <div class="brand-tagline">Ethiopian Atelier · Green Trecous</div>
+                <div class="brand-tagline">Handmade by Ethiopians</div>
             </div>
             <ul class="nav-links" id="navMenu">
                 <li><a data-section="home" class="active">Home</a></li>
+                <li><a data-section="kids">Kids' Clothing</a></li>
                 <li><a data-section="footwear">Footwear</a></li>
-                <li><a data-section="kids-clothing">Kids' Clothing</a></li>
-                <li><a data-section="new-arrivals">New Arrivals</a></li>
-                <li><a data-section="our-story">Our Story</a></li>
+                <li><a data-section="gallery">All Photos</a></li>
+                <li><a data-section="story">Our Story</a></li>
             </ul>
         </div>
     </div>
@@ -392,156 +323,261 @@
     <div class="container">
         <!-- HOME SECTION -->
         <div id="home-section" class="section">
-            <div class="hero">
-                <div class="hero-welcome">Welcome</div>
-                <div class="repeated-brand">
-                    <div class="brand-name-repeat">DINKSIRA</div>
-                    <div class="brand-name-repeat">DINKSIRA</div>
-                    <div class="brand-name-repeat">DINKSIRA</div>
-                </div>
-                <div class="double-brand">
-                    <div class="brand-name-repeat" style="font-size: clamp(2rem,6vw,3.8rem);">DINKSIRA</div>
-                    <div class="brand-name-repeat" style="font-size: clamp(2rem,6vw,3.8rem);">DINKSIRA</div>
-                </div>
-                <div class="brand-description">
-                    <p><span class="highlight-name">Dinksira</span> is an Ethiopian brand founded by <strong>Saron Gezahegn</strong> and <strong>Fikir Mesfin</strong>.</p>
-                    <p>They handcraft <strong>sustainable footwear</strong> and <strong>kids' clothing</strong> using <strong>traditional weaving</strong> and <strong>recycled leather</strong>.</p>
-                    <p>🌿 Artisan-made · Earth-minded · Ethiopian heritage</p>
-                </div>
+            <div class="hero-banner">
+                <div class="dinksira-hero">DINKSIRA</div>
+                <div class="handmade-hero">HANDMADE BY ETHIOPIANS</div>
+                <p style="margin-top: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; color: #7f6853;">Traditional weaving · Recycled leather · Sustainable footwear & kids' clothing</p>
             </div>
-            <div class="story-section">
-                <div class="story-quote"><i class="fas fa-quote-left"></i> Handmade to tell a story <i class="fas fa-quote-right"></i></div>
-                <div class="handmade-badge" style="margin-top:1rem; display:inline-block; background:#ffffffcc; padding:0.5rem 1.4rem; border-radius:100px;"><i class="fas fa-seedling"></i> slow craft | heirloom quality</div>
-            </div>
-            <div class="craft-grid">
-                <div class="craft-card"><i class="fas fa-shoe-prints" style="font-size:2.5rem; color:#558f3a;"></i><h3 style="margin:1rem 0 0.5rem;">Footwear</h3><p>Recycled leather & traditional weave.</p></div>
-                <div class="craft-card"><i class="fas fa-child" style="font-size:2.5rem; color:#558f3a;"></i><h3 style="margin:1rem 0 0.5rem;">Kids' Clothing</h3><p>Handwoven by local artisans.</p></div>
-                <div class="craft-card"><i class="fas fa-recycle" style="font-size:2.5rem; color:#558f3a;"></i><h3 style="margin:1rem 0 0.5rem;">Recycled Leather</h3><p>Zero waste upcycling.</p></div>
-            </div>
-            <div class="founders">
-                <div class="founders-text"><h4 style="color:#3f7842;">Saron & Fikir <i class="fas fa-leaf"></i></h4><p>Two visionary women turning ancestral weaving into ethical fashion.</p><div style="margin-top:0.5rem;">— rooted in Addis Ababa —</div></div>
-                <div><i class="fas fa-hands-clapping" style="font-size:3rem; color:#568c3c;"></i></div>
-            </div>
-        </div>
 
-        <!-- FOOTWEAR SECTION -->
-        <div id="footwear-section" class="section hidden-section">
-            <div style="padding: 2rem 0; text-align:center;">
-                <h2 class="section-title">Footwear Collection</h2>
-                <p style="max-width:600px; margin:0 auto;">Recycled leather, Ethiopian textile accents, and durable comfort.</p>
-            </div>
-            <div class="kids-grid">
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(125deg, #b9d2a4, #e2efd4), url('https://placehold.co/600x400/eef5e8/5a8f3c?text=Addis+Sandal'); background-blend-mode: overlay; background-size: cover;"><span class="photo-tag"><i class="fas fa-shoe-prints"></i> Addis Sandal</span></div><div class="kids-info"><h3>Addis Sandal</h3><div class="kids-desc">Recycled leather straps, handwoven insole, natural rubber sole.</div><div class="price">$98</div><div class="material-badge">recycled leather + weave</div></div></div>
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(125deg, #c2daae, #eef5e2), url('https://placehold.co/600x400/d9e8ce/4f7a38?text=Lalibela+Loafer'); background-blend-mode: overlay; background-size: cover;"><span class="photo-tag"><i class="fas fa-hiking"></i> Lalibela Loafer</span></div><div class="kids-info"><h3>Lalibela Loafer</h3><div class="kids-desc">Upcycled leather upper, inspired by Ethiopian motifs.</div><div class="price">$134</div><div class="material-badge">100% recycled leather</div></div></div>
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(125deg, #b8d29e, #eef5e2), url('https://placehold.co/600x400/cde2bf/557a3b?text=Tinish+Sneakers'); background-blend-mode: overlay; background-size: cover;"><span class="photo-tag"><i class="fas fa-baby-carriage"></i> Tinish Sneakers</span></div><div class="kids-info"><h3>Tinish Sneakers</h3><div class="kids-desc">Toddler & kids: soft sole, recycled leather & cotton weave.</div><div class="price">$64</div><div class="material-badge">handcrafted in Ethiopia</div></div></div>
-            </div>
-        </div>
-
-        <!-- ************ KIDS' CLOTHING SECTION ************ -->
-        <!-- Here we integrate the exact "Esthetic (1).png" photo content: double DINKSIRA text as a visual hero -->
-        <div id="kids-clothing-section" class="section hidden-section">
-            <!-- Hero photo block using the exact aesthetic from the uploaded file: DINKSIRA / DINKSIRA image -->
-            <div class="kids-hero-photo">
-                <div class="photo-container">
-                    <div class="esthetic-photo">
-                        <div class="photo-brand">DINKSIRA</div>
-                        <div class="photo-brand" style="margin-top: -0.3rem;">DINKSIRA</div>
-                        <div class="photo-caption">
-                            <i class="fas fa-camera"></i> Esthetic (1).png · heritage textile inspiration
+            <!-- Featured preview of collections with actual images -->
+            <h2 class="gallery-title">✦ our collections ✦</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.58.36.png" alt="Dinksira Kids Collection" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA+Kids'; this.onerror=null;">
+                        <div class="brand-visual">
+                            <div class="big-text">DINKSIRA</div>
+                            <div class="sub-text">Kids' Collection</div>
                         </div>
                     </div>
-                    <p style="margin-top: 1rem; font-size: 0.8rem; color: #4a6e39;"><i class="fas fa-hands-praying"></i> traditional weaving meets childhood wonder — the soul of Ethiopian artisanship</p>
+                    <div class="product-info">
+                        <h3>Children's Apparel</h3>
+                        <p class="product-desc">Handwoven traditional cotton · Recycled leather accents · Ethically made in Ethiopia</p>
+                        <div class="material-badge">traditional weaving</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.57.47.png" alt="Dinksira Footwear" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA+Shoes'; this.onerror=null;">
+                        <div class="brand-visual">
+                            <div class="big-text">DINKSIRA</div>
+                            <div class="sub-text">Footwear Collection</div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sustainable Shoes</h3>
+                        <p class="product-desc">Recycled leather uppers · Handwoven textile details · Durable & timeless</p>
+                        <div class="material-badge">recycled leather + weave</div>
+                    </div>
                 </div>
             </div>
 
-            <h2 class="section-title">✦ Kids' Clothing Collection ✦</h2>
-            <div class="section-sub">handcrafted with traditional weaving · recycled leather details · inspired by the photo above</div>
+            <div class="story-section">
+                <div class="story-quote"><i class="fas fa-quote-left"></i> Handmade to tell a story <i class="fas fa-quote-right"></i></div>
+                <p style="margin-top: 1rem;">Traditional weaving techniques passed down for generations, combined with recycled leather for a sustainable future.</p>
+            </div>
+        </div>
+
+        <!-- KIDS' CLOTHING SECTION - All kids clothing images from your screenshots -->
+        <div id="kids-section" class="section hidden-section">
+            <h2 class="gallery-title">👧🏿 kids' clothing 👦🏾</h2>
+            <div class="gallery-sub">handwoven with traditional Ethiopian techniques · eco-friendly materials</div>
             
-            <div class="kids-grid">
-                <!-- Product 1: Tebeb Kids' Set (photo-inspired) -->
-                <div class="kids-card">
-                    <div class="kids-img" style="background-image: linear-gradient(135deg, #cbe2bc, #f4fae9), url('https://placehold.co/600x800/d9e8ce/5e8c42?text=Tebeb+Set'); background-size: cover; background-blend-mode: overlay;">
-                        <span class="photo-tag"><i class="fas fa-child"></i> DINKSIRA · handwoven</span>
+            <div class="product-grid">
+                <!-- Kid's Item 1 with Screenshot 14.58.36 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.58.36.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA'; this.onerror=null;">
                     </div>
-                    <div class="kids-info">
+                    <div class="product-info">
                         <h3>Tebeb Kids' Set</h3>
-                        <div class="kids-desc">Hand-embroidered edges, recycled leather buttons. Breathable traditional cotton weave.</div>
+                        <p class="product-desc">Hand-embroidered edges · Recycled leather buttons · Breathable traditional cotton weave</p>
                         <div class="price">$76</div>
                         <div class="material-badge">traditional weave + eco-leather</div>
                     </div>
                 </div>
-                <!-- Product 2: Yetim Overalls (with DINKSIRA accent) -->
-                <div class="kids-card">
-                    <div class="kids-img" style="background-image: linear-gradient(145deg, #cfe2c0, #fefcf0), url('https://placehold.co/600x800/bed8aa/568c3c?text=Yetim+Overalls'); background-size: cover; background-blend-mode: overlay;">
-                        <span class="photo-tag"><i class="fas fa-baby-carriage"></i> recycled leather</span>
+
+                <!-- Kid's Item 2 with Screenshot 14.59.21 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.59.21.png" alt="DINKSIRA Handmade by Ethiopias" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA'; this.onerror=null;">
                     </div>
-                    <div class="kids-info">
+                    <div class="product-info">
                         <h3>Yetim Overalls</h3>
-                        <div class="kids-desc">Adjustable overalls from upcycled leather patches and soft traditional weave. Perfect for play.</div>
+                        <p class="product-desc">Adjustable overalls · Upcycled leather patches · Soft traditional weave · Perfect for play</p>
                         <div class="price">$94</div>
                         <div class="material-badge">recycled leather + organic cotton</div>
                     </div>
                 </div>
-                <!-- Product 3: Meskel Dress -->
-                <div class="kids-card">
-                    <div class="kids-img" style="background-image: linear-gradient(120deg, #d6e7c8, #fff7e8), url('https://placehold.co/600x800/c2daae/4c7936?text=Meskel+Dress'); background-size: cover; background-blend-mode: overlay;">
-                        <span class="photo-tag"><i class="fas fa-vest"></i> heritage embroidery</span>
+
+                <!-- Kid's Item 3 with Screenshot 14.58.09 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.58.09.png" alt="DINKSIRA Handmade by Eihopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA'; this.onerror=null;">
                     </div>
-                    <div class="kids-info">
+                    <div class="product-info">
                         <h3>Meskel Dress</h3>
-                        <div class="kids-desc">Celebrating Ethiopian festivals: hand embroidery, recycled leather flower details.</div>
+                        <p class="product-desc">Celebrating Ethiopian festivals · Hand embroidery · Recycled leather flower details</p>
                         <div class="price">$84</div>
                         <div class="material-badge">hand-embroidered · eco-leather</div>
                     </div>
                 </div>
-                <!-- Product 4: Selam Kids' Jacket (woven layer) -->
-                <div class="kids-card">
-                    <div class="kids-img" style="background-image: linear-gradient(130deg, #cbe0bb, #fef9ec), url('https://placehold.co/600x800/b7d19c/5a853c?text=Woven+Jacket'); background-size: cover; background-blend-mode: overlay;">
-                        <span class="photo-tag"><i class="fas fa-cloud-sun"></i> limited edition</span>
+
+                <!-- Kid's Item 4 with Screenshot 14.57.47 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.57.47.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=DINKSIRA'; this.onerror=null;">
                     </div>
-                    <div class="kids-info">
+                    <div class="product-info">
                         <h3>Selam Kids' Jacket</h3>
-                        <div class="kids-desc">Lightweight handwoven layer with recycled leather ties. Inspired by Ethiopian shawl techniques.</div>
+                        <p class="product-desc">Lightweight handwoven layer · Recycled leather ties · Ethiopian shawl technique</p>
                         <div class="price">$112</div>
                         <div class="material-badge">traditional weave · artisanal</div>
                     </div>
                 </div>
+
+                <!-- Kid's Item 5 with Screenshot 14.59.41 (Buraboro/DINKSTRA) -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-4-26%20at%2014.59.41.png" alt="Buraboro DINKSTRA" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Buraboro'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Little Explorer Set</h3>
+                        <p class="product-desc">Comfortable playwear · Traditional Ethiopian stripes · Recycled leather buttons</p>
+                        <div class="price">$68</div>
+                        <div class="material-badge">organic cotton · eco-leather</div>
+                    </div>
+                </div>
             </div>
 
-            <!-- extra photo context: the Esthetic image also appears as a badge of authenticity -->
-            <div style="text-align: center; margin: 1rem 0 2rem;">
-                <span class="sustainability-chip"><i class="fas fa-image"></i> “DINKSIRA · DINKSIRA” — the spirit of the photo lives in every stitch</span>
-            </div>
-
-            <div class="sustainability-note">
-                <span class="sustainability-chip"><i class="fas fa-fill-drip"></i> traditional weaving — Ethiopian heritage</span>
-                <span class="sustainability-chip"><i class="fas fa-leaf"></i> recycled leather — circular design</span>
-                <span class="sustainability-chip"><i class="fas fa-globe"></i> handcrafted in Addis Ababa</span>
+            <div class="hero-banner" style="margin-top: 1rem; background: #f4ede5;">
+                <div class="brand-visual">
+                    <div class="big-text">DINKSIRA</div>
+                    <div class="sub-text">HANDMADE BY ETHIOPIANS</div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">Each piece tells a story · Slow fashion for the next generation</p>
             </div>
         </div>
 
-        <!-- NEW ARRIVALS section -->
-        <div id="new-arrivals-section" class="section hidden-section">
-            <div style="text-align:center; margin: 2rem 0;">
-                <h2 class="section-title">✦ new arrivals ✦</h2>
-                <p>Fresh from the atelier: sustainable pieces for the whole family</p>
+        <!-- FOOTWEAR SECTION - All shoe images from your screenshots -->
+        <div id="footwear-section" class="section hidden-section">
+            <h2 class="gallery-title">👞 sustainable footwear 👟</h2>
+            <div class="gallery-sub">recycled leather uppers · handwoven textile details · made in Ethiopia</div>
+            
+            <div class="product-grid">
+                <!-- Shoe 1 with Screenshot 14.57.47 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.57.47.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Addis+Sandal'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Addis Sandal</h3>
+                        <p class="product-desc">Recycled leather straps · Handwoven insole · Natural rubber sole</p>
+                        <div class="price">$98</div>
+                        <div class="material-badge">recycled leather + traditional weave</div>
+                    </div>
+                </div>
+
+                <!-- Shoe 2 with Screenshot 14.58.36 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.58.36.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Lalibela+Loafer'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lalibela Loafer</h3>
+                        <p class="product-desc">Upcycled leather upper · Padded collar · Ethiopian motif inspiration</p>
+                        <div class="price">$134</div>
+                        <div class="material-badge">100% recycled leather lining</div>
+                    </div>
+                </div>
+
+                <!-- Shoe 3 with Screenshot 14.58.09 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.58.09.png" alt="DINKSIRA Handmade by Eihopians" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Tinish+Sneakers'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tinish Sneakers</h3>
+                        <p class="product-desc">Toddler & kids · Soft sole · Recycled leather & cotton weave upper</p>
+                        <div class="price">$64</div>
+                        <div class="material-badge">handcrafted in Ethiopia</div>
+                    </div>
+                </div>
+
+                <!-- Shoe 4 with Screenshot 14.59.21 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-04-26%20at%2014.59.21.png" alt="DINKSIRA Handmade by Ethiopias" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Axum+Boot'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Axum Boot</h3>
+                        <p class="product-desc">Ankle boot · Recycled leather · Handwoven textile panels · Durable grip sole</p>
+                        <div class="price">$158</div>
+                        <div class="material-badge">premium recycled leather + weave</div>
+                    </div>
+                </div>
+
+                <!-- Shoe 5 with Screenshot 14.59.41 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img class="actual-image" src="Screenshot%202026-4-26%20at%2014.59.41.png" alt="Buraboro DINKSTRA" onerror="this.src='https://placehold.co/400x300/f5ede4/b87a48?text=Harar+Espadrille'; this.onerror=null;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Harar Espadrille</h3>
+                        <p class="product-desc">Breathable woven upper · Recycled leather toe cap · Jute sole</p>
+                        <div class="price">$88</div>
+                        <div class="material-badge">traditional Ethiopian weave</div>
+                    </div>
+                </div>
             </div>
-            <div class="kids-grid">
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(135deg, #d4e5c6, #fff6e5); background-blend-mode: overlay;"><span class="photo-tag">woven tunic</span></div><div class="kids-info"><h3>Selam Tunic</h3><div class="kids-desc">Women's dress, naturally dyed Ethiopian cotton.</div><div class="price">$128</div></div></div>
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(135deg, #cce2bc, #fff3e4); background-blend-mode: overlay;"><span class="photo-tag">kimono jacket</span></div><div class="kids-info"><h3>Lideta Kimono</h3><div class="kids-desc">Unisex layering piece with recycled leather details.</div><div class="price">$152</div></div></div>
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(135deg, #cde0bd, #fef7ea); background-blend-mode: overlay;"><span class="photo-tag">wrap skirt</span></div><div class="kids-info"><h3>Sheba Wrap Skirt</h3><div class="kids-desc">Ethiopian stripe textile, adjustable waist.</div><div class="price">$108</div></div></div>
-                <div class="kids-card"><div class="kids-img" style="background-image: linear-gradient(135deg, #cbe0bb, #fff2e2); background-blend-mode: overlay;"><span class="photo-tag"><i class="fas fa-child"></i> limited</span></div><div class="kids-info"><h3>Kids' Woven Set</h3><div class="kids-desc">Eco-friendly playwear set with recycled leather buttons.</div><div class="price">$69</div></div></div>
+
+            <div class="hero-banner" style="margin-top: 1rem; background: #f4ede5;">
+                <div class="brand-visual">
+                    <div class="big-text">DINKSIRA</div>
+                    <div class="sub-text">HANDMADE BY ETHIOPIANS</div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">Walk softly on the earth · Sustainable footwear from Addis Ababa</p>
             </div>
         </div>
 
-        <!-- OUR STORY -->
-        <div id="our-story-section" class="section hidden-section">
-            <div style="padding: 3rem 0; max-width:800px; margin:0 auto;">
-                <h2 class="section-title">Our Story</h2>
-                <div class="brand-description" style="margin-top:1rem;">
-                    <p>Dinksira was born from a shared vision between <strong>Saron Gezahegn</strong> and <strong>Fikir Mesfin</strong> — to preserve Ethiopia's rich textile heritage while embracing sustainable practices. Every piece is handcrafted using traditional weaving techniques passed down through generations.</p>
-                    <p>We partner with local artisans in Addis Ababa, using recycled leather to reduce waste and celebrate circular design. Our pieces are more than fashion; they are stories of culture, female leadership, and respect for the earth.</p>
-                    <p><i class="fas fa-seedling"></i> <strong>Handmade to tell a story — Green Trecous Edition</strong></p>
+        <!-- ALL PHOTOS GALLERY - displays every uploaded screenshot -->
+        <div id="gallery-section" class="section hidden-section">
+            <h2 class="gallery-title">📸 all uploaded photos</h2>
+            <div class="gallery-sub">complete collection of Dinksira brand assets</div>
+            
+            <div class="image-gallery-grid">
+                <div class="gallery-img-card">
+                    <img src="Screenshot%202026-04-26%20at%2014.57.47.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.style.display='none'">
+                    <div class="img-caption">DINKSIRA · HANDMADE BY ETHIOPIANS</div>
+                </div>
+                <div class="gallery-img-card">
+                    <img src="Screenshot%202026-04-26%20at%2014.58.09.png" alt="DINKSIRA Handmade by Eihopians" onerror="this.style.display='none'">
+                    <div class="img-caption">DINKSIRA · HANDMADE BY EIHOPIANS</div>
+                </div>
+                <div class="gallery-img-card">
+                    <img src="Screenshot%202026-04-26%20at%2014.58.36.png" alt="DINKSIRA Handmade by Ethiopians" onerror="this.style.display='none'">
+                    <div class="img-caption">DINKSIRA · HANDMADE BY ETHIOPIANS</div>
+                </div>
+                <div class="gallery-img-card">
+                    <img src="Screenshot%202026-04-26%20at%2014.59.21.png" alt="DINKSIRA Handmade by Ethiopias" onerror="this.style.display='none'">
+                    <div class="img-caption">DINKSIRA · HANDMADE BY ETHIOPIAS</div>
+                </div>
+                <div class="gallery-img-card">
+                    <img src="Screenshot%202026-4-26%20at%2014.59.41.png" alt="Buraboro DINKSTRA" onerror="this.style.display='none'">
+                    <div class="img-caption">Buraboro · DINKSTRA</div>
+                </div>
+            </div>
+            <div class="story-section" style="margin-top: 1rem;">
+                <p><i class="fas fa-cloud-upload-alt"></i> These images are part of the Dinksira GitHub repository. They appear here directly from your uploaded files.</p>
+            </div>
+        </div>
+
+        <!-- OUR STORY SECTION -->
+        <div id="story-section" class="section hidden-section">
+            <div style="max-width: 800px; margin: 3rem auto;">
+                <h2 class="gallery-title">Our Journey</h2>
+                <div class="hero-banner" style="background: #fff9f2;">
+                    <div class="brand-visual">
+                        <div class="big-text">DINKSIRA</div>
+                        <div class="sub-text">HANDMADE BY ETHIOPIANS</div>
+                    </div>
+                    <p style="margin-top: 1.5rem; line-height: 1.6;">Founded by <strong>Saron Gezahegn</strong> and <strong>Fikir Mesfin</strong>, Dinksira is an Ethiopian brand that honors ancestral weaving techniques while embracing sustainable innovation. Every shoe, every garment is handcrafted using recycled leather and traditional Ethiopian textiles.</p>
+                    <p style="margin-top: 1rem;">We believe in circular design, artisanal dignity, and preserving cultural heritage — one stitch at a time.</p>
+                    <div class="material-badge" style="margin-top: 1.5rem; background: #e0d5c8;">⚡ recycled leather · traditional weaving · Ethiopian soul</div>
+                </div>
+                <div class="story-section" style="margin-top: 2rem;">
+                    <div class="story-quote"><i class="fas fa-quote-left"></i> Handmade to tell a story <i class="fas fa-quote-right"></i></div>
+                    <p style="margin-top: 1rem;">Every purchase supports artisan communities and preserves Ethiopian textile heritage for future generations.</p>
                 </div>
             </div>
         </div>
@@ -550,19 +586,20 @@
 
 <footer class="footer">
     <div class="container">
-        <p><strong>Dinksira</strong> — Ethiopian sustainable footwear & kids' clothing · Green Trecous</p>
+        <p><strong>Dinksira</strong> — Handmade by Ethiopians · Sustainable Footwear & Kids' Clothing</p>
         <p><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia  |  <i class="fas fa-envelope"></i> hello@dinksira.et</p>
-        <small>© 2025 Dinksira — Handcrafted with traditional weaving & recycled leather. Inspired by Esthetic (1).png.</small>
+        <small>© 2025 Dinksira — Traditional weaving · Recycled leather · Ethiopian heritage</small>
+        <small style="display: block; margin-top: 8px;">All images from the Paulo030/Dinksira repository are displayed using relative paths.</small>
     </div>
 </footer>
 
 <script>
     const sectionsMap = {
         home: 'home-section',
+        kids: 'kids-section',
         footwear: 'footwear-section',
-        'kids-clothing': 'kids-clothing-section',
-        'new-arrivals': 'new-arrivals-section',
-        'our-story': 'our-story-section'
+        gallery: 'gallery-section',
+        story: 'story-section'
     };
     const allSections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('[data-section]');
@@ -579,19 +616,21 @@
             else link.classList.remove('active');
         });
     }
+
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             const key = link.getAttribute('data-section');
             if (key && sectionsMap[key]) showSection(sectionsMap[key]);
         });
     });
-    if(logo) logo.addEventListener('click', () => showSection('home-section'));
-    
-    // Interactive card click to reflect the photo/story
-    document.querySelectorAll('.kids-card').forEach(card => {
+    if (logo) logo.addEventListener('click', () => showSection('home-section'));
+
+    // Interactive product card click
+    document.querySelectorAll('.product-card').forEach(card => {
         card.addEventListener('click', (e) => {
-            const title = card.querySelector('.kids-info h3')?.innerText || 'piece';
-            alert(`🌿 Explore ${title} — handcrafted with traditional weaving & recycled leather. As seen in the Esthetic (1).png photo, Dinksira celebrates Ethiopian heritage.`);
+            const titleElem = card.querySelector('h3');
+            const text = titleElem ? titleElem.innerText : 'Dinksira product';
+            alert(`✨ "${text}" — Handmade by Ethiopians. Traditional weaving & recycled leather.`);
         });
     });
     showSection('home-section');
