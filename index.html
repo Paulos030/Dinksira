@@ -15,13 +15,13 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #1e2a1a;
-            color: #e2dccd;
+            background: #2c3824;
+            color: #e8dfca;
             line-height: 1.45;
             scroll-behavior: smooth;
         }
 
-        /* vintage distressed overlay + grain */
+        /* vintage distressed overlay + grain texture */
         body::before {
             content: "";
             position: fixed;
@@ -30,12 +30,12 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" opacity="0.12"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>');
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" opacity="0.1"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>');
             background-repeat: repeat;
             z-index: 999;
         }
 
-        /* aged vignette */
+        /* vintage vignette for depth */
         body::after {
             content: "";
             position: fixed;
@@ -44,7 +44,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.25) 100%);
+            background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.3) 100%);
             z-index: 998;
         }
 
@@ -61,23 +61,23 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: 32px;
+            gap: 36px;
             padding: 16px 0;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             letter-spacing: 3px;
-            border-bottom: 1px solid #8b7355;
+            border-bottom: 1px solid #9e8968;
             background: transparent;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 400;
         }
         .top-bar a {
             text-decoration: none;
-            color: #dcd0b4;
+            color: #ddd0b0;
             transition: all 0.3s ease;
             font-family: 'Inter', sans-serif;
         }
         .top-bar a:hover {
-            color: #c7a86b;
+            color: #c9a96e;
             letter-spacing: 4px;
         }
 
@@ -88,7 +88,7 @@
             align-items: baseline;
             padding: 28px 0 22px;
             flex-wrap: wrap;
-            border-bottom: 1px solid #8b7355;
+            border-bottom: 1px solid #9e8968;
             background: transparent;
         }
         .logo {
@@ -96,9 +96,9 @@
             font-size: 2.2rem;
             font-weight: 600;
             letter-spacing: 3px;
-            color: #efe6cf;
+            color: #f1e6cd;
             text-decoration: none;
-            text-shadow: 2px 2px 0px #3a4a2a;
+            text-shadow: 2px 2px 0px #4a5a3a;
         }
         .nav-links {
             display: flex;
@@ -107,17 +107,17 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: #dcd0b4;
+            color: #ddd0b0;
             font-size: 0.75rem;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: 2.5px;
             text-transform: uppercase;
             transition: all 0.3s;
             font-family: 'Inter', sans-serif;
         }
         .nav-links a:hover {
-            color: #dbb87c;
-            letter-spacing: 3px;
+            color: #dbba7c;
+            letter-spacing: 3.5px;
         }
         .right-icons {
             display: flex;
@@ -126,32 +126,32 @@
         }
         .right-icons a {
             text-decoration: none;
-            color: #dcd0b4;
+            color: #ddd0b0;
             font-size: 0.7rem;
-            font-weight: 300;
+            font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             transition: color 0.2s;
         }
         .right-icons a:hover {
-            color: #dbb87c;
+            color: #dbba7c;
         }
 
-        /* hero section - antique tint */
+        /* hero section - antique warm glow */
         .hero-ethiopia {
             text-align: center;
             padding: 70px 20px 80px;
-            background: radial-gradient(ellipse at 50% 30%, #2c3a24, #1e2a1a);
+            background: radial-gradient(ellipse at 50% 30%, #364830, #2c3824);
         }
         .hero-image-wrapper {
             max-width: 900px;
             margin: 0 auto 45px;
             border-radius: 2px;
             overflow: hidden;
-            box-shadow: 15px 18px 28px rgba(0,0,0,0.35);
+            box-shadow: 15px 18px 28px rgba(0,0,0,0.4);
             background: #dac8a8;
             border: 1px solid #b89860;
-            filter: sepia(0.2) contrast(1.05);
+            filter: sepia(0.15) contrast(1.02);
         }
         .hero-image-wrapper img {
             width: 100%;
@@ -167,16 +167,16 @@
             font-size: 3.5rem;
             font-weight: 600;
             letter-spacing: 4px;
-            color: #efe0c1;
-            text-shadow: 3px 3px 0px #3a4a2a;
+            color: #f2e6cc;
+            text-shadow: 3px 3px 0px #4a5a3a;
             margin-bottom: 18px;
         }
         .hero-ethiopia .subline {
             font-size: 0.75rem;
-            color: #cbb77a;
+            color: #cbad72;
             letter-spacing: 6px;
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 500;
             word-spacing: 2px;
         }
 
@@ -194,7 +194,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 8px;
-            background-color: #1e2a1a;
+            background-color: #2c3824;
             margin: 40px 0 30px;
         }
         .grid-item {
@@ -203,12 +203,12 @@
             text-align: center;
             transition: all 0.3s;
             cursor: pointer;
-            border: 0.5px solid #6a5a3e;
+            border: 0.5px solid #7a6a4a;
             box-shadow: inset 0 0 0 0px #baa77a;
         }
         .grid-item:hover {
-            background-color: #364a30;
-            border-color: #c7a86b;
+            background-color: #3a4a30;
+            border-color: #c9a96e;
             box-shadow: inset 0 0 0 1px #baa77a;
         }
         .product-image {
@@ -242,13 +242,14 @@
             font-size: 1.3rem;
             letter-spacing: 1px;
             margin: 18px 0 6px;
-            color: #efe0c1;
+            color: #f2e6cc;
         }
         .grid-item p {
             font-size: 0.68rem;
             color: #c7bc98;
             letter-spacing: 1.5px;
             text-transform: uppercase;
+            font-weight: 400;
         }
 
         /* editorial banner - vintage script */
@@ -257,8 +258,8 @@
             margin: 70px 0 50px;
             padding: 65px 40px;
             text-align: center;
-            border-top: 1px solid #8b7355;
-            border-bottom: 1px solid #8b7355;
+            border-top: 1px solid #9e8968;
+            border-bottom: 1px solid #9e8968;
             box-shadow: inset 0 0 30px rgba(0,0,0,0.2);
         }
         .editorial-banner h3 {
@@ -266,14 +267,14 @@
             font-size: 2.7rem;
             font-weight: 500;
             letter-spacing: 3px;
-            color: #f2e4c6;
+            color: #f2e6cc;
         }
         .editorial-banner .sub {
             font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 8px;
             margin-top: 16px;
-            color: #cbb77a;
+            color: #cbad72;
         }
         .footnote {
             max-width: 560px;
@@ -293,15 +294,15 @@
         .col-card {
             flex: 1;
             background: #2a3a24;
-            border: 1px solid #5f523a;
+            border: 1px solid #7a6a4a;
             padding: 44px 28px;
             text-align: center;
             transition: 0.3s;
             backdrop-filter: blur(1px);
         }
         .col-card:hover {
-            border-color: #c7a86b;
-            background: #30462a;
+            border-color: #c9a96e;
+            background: #364a30;
             transform: translateY(-4px);
         }
         .col-card .product-preview {
@@ -316,7 +317,7 @@
             align-items: center;
             justify-content: center;
             border: 1px solid #b89860;
-            filter: sepia(0.2);
+            filter: sepia(0.15);
         }
         .col-card .product-preview img {
             width: 100%;
@@ -332,17 +333,17 @@
         .col-card .category-tag {
             font-size: 0.6rem;
             letter-spacing: 4px;
-            color: #dbb87c;
+            color: #dbba7c;
             margin-bottom: 16px;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 500;
         }
         .col-card h4 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.9rem;
             font-weight: 500;
             margin-bottom: 20px;
-            color: #efe0c1;
+            color: #f2e6cc;
             line-height: 1.2;
         }
         .shop-link {
@@ -350,9 +351,9 @@
             margin-top: 20px;
             text-decoration: none;
             font-size: 0.7rem;
-            font-weight: 500;
-            color: #dbb87c;
-            border-bottom: 1px solid #dbb87c;
+            font-weight: 600;
+            color: #dbba7c;
+            border-bottom: 1px solid #dbba7c;
             padding-bottom: 5px;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -365,12 +366,12 @@
 
         /* heritage spotlight - vintage frame */
         .heritage-spotlight {
-            background: #1e2a1a;
+            background: #2c3824;
             margin: 40px 0 60px;
             padding: 60px 40px;
             text-align: center;
-            border-top: 2px solid #8b7355;
-            border-bottom: 2px solid #8b7355;
+            border-top: 2px solid #9e8968;
+            border-bottom: 2px solid #9e8968;
             position: relative;
         }
         .heritage-spotlight::before {
@@ -381,14 +382,14 @@
             top: -18px;
             left: 50%;
             transform: translateX(-50%);
-            background: #1e2a1a;
+            background: #2c3824;
             padding: 0 20px;
         }
         .heritage-spotlight h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.4rem;
             font-weight: 500;
-            color: #f2e0be;
+            color: #f2e6cc;
             margin-bottom: 18px;
             letter-spacing: 2px;
         }
@@ -403,24 +404,25 @@
         /* sustainability note */
         .sustainability-note {
             background: #2a3a24;
-            border-top: 1px solid #8b7355;
+            border-top: 1px solid #9e8968;
             padding: 48px 30px;
             text-align: center;
             margin-top: 30px;
         }
         .sustainability-note p {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             letter-spacing: 3px;
-            color: #dbb87c;
+            color: #dbba7c;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 400;
+            word-spacing: 2px;
         }
 
         footer {
             padding: 55px 0 45px;
-            border-top: 1px solid #5f523a;
+            border-top: 1px solid #7a6a4a;
             margin-top: 20px;
-            background-color: #1e2a1a;
+            background-color: #2c3824;
         }
         .footer-inner {
             display: flex;
@@ -434,7 +436,7 @@
             text-decoration: none;
             line-height: 1.9;
             letter-spacing: 0.8px;
-            font-weight: 300;
+            font-weight: 400;
         }
         .footer-col a:hover {
             color: #e6c48b;
@@ -478,34 +480,35 @@
 <div class="container">
     <!-- top bar -->
     <div class="top-bar">
-        <a href="#" class="top-link" data-page="stores">Our stores</a>
-        <a href="#" class="top-link" data-page="favorites">Favorites</a>
-        <a href="#" class="top-link" data-page="signin">Sign in</a>
-        <a href="#" class="top-link" data-page="bag">Bag</a>
+        <a href="#" class="top-link" data-page="stores">OUR STORES</a>
+        <a href="#" class="top-link" data-page="favorites">FAVORITES</a>
+        <a href="#" class="top-link" data-page="signin">SIGN IN</a>
+        <a href="#" class="top-link" data-page="bag">BAG</a>
     </div>
 
     <!-- main navigation -->
     <div class="main-nav">
         <a href="#" class="logo" id="logoLink">DINKSIRA</a>
         <div class="nav-links">
-            <a href="clothing.html">Clothing</a>
-            <a href="#" class="nav-item" data-page="dresses">Dresses</a>
-            <a href="#" class="nav-item" data-page="tops">Tops</a>
-            <a href="shoes.html">Shoes</a>
-            <a href="#" class="nav-item" data-page="shoptour">Shop tour</a>
+            <a href="clothing.html">CLOTHING</a>
+            <a href="#" class="nav-item" data-page="dresses">DRESSES</a>
+            <a href="#" class="nav-item" data-page="tops">TOPS</a>
+            <a href="shoes.html">SHOES</a>
+            <a href="#" class="nav-item" data-page="shoptour">SHOP TOUR</a>
         </div>
         <div class="right-icons">
-            <a href="search.html" class="search-icon">Q Search</a>
+            <!-- Removed the "Q" from search - now just "SEARCH" -->
+            <a href="search.html" class="search-icon">SEARCH</a>
         </div>
     </div>
 </div>
 
-<!-- Hero section - vintage handcrafted vignette -->
+<!-- Hero section -->
 <section class="hero-ethiopia">
     <div class="container">
         <div class="hero-image-wrapper">
             <img src="Screenshot%202026-05-01%20at%2012.38.55.png" 
-                 alt="DINKSIRA Ethiopian artisans in light blue and white stripes"
+                 alt="DINKSIRA Ethiopian artisans - vintage heritage"
                  onerror="this.src='https://placehold.co/1200x600/4a6a38/c4a86a?text=DINKSIRA%0A%7E%20VINTAGE%20HERITAGE%20%7E'">
         </div>
         <h2>DINKSIRA</h2>
@@ -524,28 +527,28 @@
                 <img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Vintage Clothing">
             </div>
             <h3>Clothing</h3>
-            <p>Timeless silhouettes</p>
+            <p>TIMELESS SILHOUETTES</p>
         </div>
         <div class="grid-item" data-category="shoes">
             <div class="product-image">
                 <img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Vintage Shoes">
             </div>
             <h3>Shoes</h3>
-            <p>Archival footwear</p>
+            <p>ARCHIVAL FOOTWEAR</p>
         </div>
         <div class="grid-item" data-category="dresses">
             <div class="product-image">
                 <img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Vintage Dresses">
             </div>
             <h3>Dresses</h3>
-            <p>Effortless drape</p>
+            <p>EFFORTLESS DRAPE</p>
         </div>
         <div class="grid-item" data-category="tops">
             <div class="product-image">
                 <img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Vintage Tops">
             </div>
             <h3>Tops</h3>
-            <p>Clean lines</p>
+            <p>CLEAN LINES</p>
         </div>
     </div>
 </div>
@@ -576,7 +579,7 @@
             </div>
             <div class="category-tag">ETHIOPIAN CRAFT</div>
             <h4>Clothing<br>woven with purpose</h4>
-            <a href="clothing.html" class="shop-link">Shop clothing →</a>
+            <a href="clothing.html" class="shop-link">SHOP CLOTHING →</a>
         </div>
         <div class="col-card" data-page="shoes">
             <div class="product-preview">
@@ -584,7 +587,7 @@
             </div>
             <div class="category-tag">ARTISAN SOLE</div>
             <h4>Shoes that<br>carry heritage</h4>
-            <a href="shoes.html" class="shop-link">Shop shoes →</a>
+            <a href="shoes.html" class="shop-link">SHOP SHOES →</a>
         </div>
     </div>
 </div>
@@ -592,7 +595,7 @@
 <!-- sustainability note -->
 <div class="sustainability-note">
     <div class="container">
-        <p>♢ DINKSIRA — handmade by Ethiopians · supporting local communities · ethical production ♢</p>
+        <p>♢ DINKSIRA — HANDMADE BY ETHIOPIANS · SUPPORTING LOCAL COMMUNITIES · ETHICAL PRODUCTION ♢</p>
     </div>
 </div>
 
