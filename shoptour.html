@@ -1,1 +1,61 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINKSIRA — Shop Tour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #2c3824; color: #e8dfca; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+        .header { text-align: center; padding: 80px 0 40px; border-bottom: 1px solid #9e8968; }
+        .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: #f2e6cc; letter-spacing: 3px; }
+        .back-link { display: inline-block; margin: 20px 0; color: #dbba7c; text-decoration: none; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; }
+        .back-link:hover { color: #efcd9a; letter-spacing: 3px; }
+        .tour-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin: 60px 0; }
+        .tour-item { text-align: center; }
+        .tour-item img { width: 100%; max-width: 400px; height: auto; filter: sepia(0.2); border: 1px solid #7a6a4a; }
+        .tour-item h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin: 20px 0 10px; color: #f2e6cc; }
+        .tour-item p { color: #c7bc98; font-size: 0.9rem; }
+        .message { text-align: center; padding: 60px; background: #2a3a24; margin: 40px 0; border: 1px solid #7a6a4a; }
+        .message p { color: #cbad72; font-size: 1.1rem; }
+        footer { text-align: center; padding: 60px; border-top: 1px solid #7a6a4a; margin-top: 40px; font-size: 0.7rem; color: #94845c; }
+        @media (max-width: 860px) { .tour-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>SHOP TOUR</h1>
+        <a href="index.html" class="back-link">← BACK TO HOME</a>
+    </div>
+    <div class="tour-grid">
+        <div class="tour-item">
+            <img src="Screenshot%202026-05-01%20at%2012.38.55.png" alt="Addis Ababa Atelier">
+            <h3>Addis Ababa Atelier</h3>
+            <p>Our main workshop where master artisans handcraft each piece with precision and care.</p>
+        </div>
+        <div class="tour-item">
+            <img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Weaving Studio">
+            <h3>Traditional Weaving Studio</h3>
+            <p>Generations of weaving knowledge preserved in every thread.</p>
+        </div>
+        <div class="tour-item">
+            <img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Leather Workshop">
+            <h3>Leather Atelier</h3>
+            <p>Vegetable-tanned leathers shaped by hand.</p>
+        </div>
+        <div class="tour-item">
+            <img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Dyeing House">
+            <h3>Natural Dyeing House</h3>
+            <p>Indigo, ochre, and botanical dyes from the Ethiopian highlands.</p>
+        </div>
+    </div>
+    <div class="message">
+        <p>✦ We welcome visitors by appointment. Contact us to arrange a studio visit in Addis Ababa. ✦</p>
+    </div>
+</div>
+<footer>© 2025 DINKSIRA — Handmade by Ethiopians</footer>
+</body>
+</html>
