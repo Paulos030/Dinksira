@@ -33,9 +33,24 @@
         <a href="index.html" class="back-link">← BACK TO HOME</a>
     </div>
     <div class="product-grid">
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Wool Coat"><h3>Asymmetric Wool Coat</h3><p>Hand-finished tailoring</p><div class="price">$489</div></div>
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Linen Shirt"><h3>Folded Seam Shirt</h3><p>Organic linen</p><div class="price">$189</div></div>
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Trousers"><h3>Draped Trousers</h3><p>Raw edge finish</p><div class="price">$279</div></div>
+        <div class="product-card">
+            <img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Wool Coat">
+            <h3>Asymmetric Wool Coat</h3>
+            <p>Hand-finished tailoring</p>
+            <div class="price">$489</div>
+        </div>
+        <div class="product-card">
+            <img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Linen Shirt">
+            <h3>Folded Seam Shirt</h3>
+            <p>Organic linen</p>
+            <div class="price">$189</div>
+        </div>
+        <div class="product-card">
+            <img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Trousers">
+            <h3>Draped Trousers</h3>
+            <p>Raw edge finish</p>
+            <div class="price">$279</div>
+        </div>
     </div>
 </div>
 <footer>© 2025 DINKSIRA — Handmade by Ethiopians</footer>
