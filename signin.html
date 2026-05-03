@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINKSIRA — Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #2c3824; color: #e8dfca; }
+        .container { max-width: 500px; margin: 0 auto; padding: 0 40px; text-align: center; }
+        .header { text-align: center; padding: 80px 0 40px; }
+        .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: #f2e6cc; letter-spacing: 3px; }
+        .back-link { display: inline-block; margin: 20px 0; color: #dbba7c; text-decoration: none; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; }
+        .back-link:hover { color: #efcd9a; letter-spacing: 3px; }
+        .form-group { margin: 30px 0; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 0.8rem; letter-spacing: 1px; color: #c7bc98; }
+        .form-group input { width: 100%; padding: 12px 15px; background: #2a3a24; border: 1px solid #7a6a4a; color: #e8dfca; font-size: 1rem; }
+        .form-group input:focus { outline: none; border-color: #c9a96e; }
+        .signin-btn { width: 100%; padding: 14px; background: #3a4a30; border: 1px solid #7a6a4a; color: #dbba7c; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: 0.3s; margin-top: 20px; }
+        .signin-btn:hover { background: #4a5a40; border-color: #c9a96e; color: #efcd9a; }
+        .signup-link { margin-top: 30px; font-size: 0.8rem; color: #c7bc98; }
+        .signup-link a { color: #dbba7c; text-decoration: none; }
+        .signup-link a:hover { color: #efcd9a; }
+        footer { text-align: center; padding: 60px; border-top: 1px solid #7a6a4a; margin-top: 60px; font-size: 0.7rem; color: #94845c; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>SIGN IN</h1>
+        <a href="index.html" class="back-link">← BACK TO HOME</a>
+    </div>
+    <div class="form-group">
+        <label>EMAIL</label>
+        <input type="email" placeholder="your@email.com">
+    </div>
+    <div class="form-group">
+        <label>PASSWORD</label>
+        <input type="password" placeholder="••••••••">
+    </div>
+    <button class="signin-btn" onclick="alert('Sign in functionality coming soon. Please check back!')">SIGN IN →</button>
+    <div class="signup-link">Don't have an account? <a href="#">Create one</a></div>
+</div>
+<footer>© 2025 DINKSIRA — Handmade by Ethiopians</footer>
+</body>
+</html>
