@@ -44,36 +44,45 @@
         .nav-links a:hover { color: #dbba7c; letter-spacing: 3.5px; }
         .right-icons { display: flex; gap: 1.5rem; align-items: center; }
         .right-icons a { text-decoration: none; color: #ddd0b0; font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; }
+        .right-icons a:hover { color: #dbba7c; }
         .hero-ethiopia { text-align: center; padding: 70px 20px 80px; background: radial-gradient(ellipse at 50% 30%, #364830, #2c3824); }
-        .hero-image-wrapper { max-width: 900px; margin: 0 auto 45px; border-radius: 2px; overflow: hidden; box-shadow: 15px 18px 28px rgba(0,0,0,0.4); background: #dac8a8; border: 1px solid #b89860; filter: sepia(0.15); }
+        .hero-image-wrapper { max-width: 900px; margin: 0 auto 45px; border-radius: 2px; overflow: hidden; box-shadow: 15px 18px 28px rgba(0,0,0,0.4); background: #dac8a8; border: 1px solid #b89860; filter: sepia(0.15); cursor: pointer; transition: all 0.3s; }
+        .hero-image-wrapper:hover { filter: sepia(0); transform: scale(1.01); }
         .hero-image-wrapper img { width: 100%; height: auto; display: block; }
         .hero-ethiopia h2 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 600; letter-spacing: 4px; color: #f2e6cc; text-shadow: 3px 3px 0px #4a5a3a; margin-bottom: 18px; }
         .hero-ethiopia .subline { font-size: 0.75rem; color: #cbad72; letter-spacing: 6px; text-transform: uppercase; }
         .ornament { text-align: center; font-size: 1.6rem; color: #b89860; margin: 20px 0 10px; letter-spacing: 8px; }
         .featured-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 40px 0 30px; }
-        .grid-item { background: #2a3a24; padding: 32px 16px 40px; text-align: center; cursor: pointer; border: 0.5px solid #7a6a4a; }
-        .grid-item:hover { background-color: #3a4a30; border-color: #c9a96e; }
-        .product-image { width: 100%; max-width: 180px; height: 210px; margin: 0 auto 20px; overflow: hidden; background: #2c3824; border: 1px solid #b89860; }
-        .product-image img { width: 100%; height: 100%; object-fit: cover; }
+        .grid-item { background: #2a3a24; padding: 32px 16px 40px; text-align: center; cursor: pointer; border: 0.5px solid #7a6a4a; transition: all 0.3s; }
+        .grid-item:hover { background-color: #3a4a30; border-color: #c9a96e; transform: translateY(-3px); }
+        .product-image { width: 100%; max-width: 180px; height: 210px; margin: 0 auto 20px; overflow: hidden; background: #2c3824; border: 1px solid #b89860; transition: all 0.3s; }
+        .grid-item:hover .product-image { border-color: #c9a96e; }
+        .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .grid-item:hover .product-image img { transform: scale(1.05); filter: sepia(0); }
         .grid-item h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin: 18px 0 6px; color: #f2e6cc; }
         .grid-item p { font-size: 0.68rem; color: #c7bc98; letter-spacing: 1.5px; text-transform: uppercase; }
-        .editorial-banner { background: #2a3a24; margin: 70px 0 50px; padding: 65px 40px; text-align: center; border-top: 1px solid #9e8968; border-bottom: 1px solid #9e8968; }
+        .editorial-banner { background: #2a3a24; margin: 70px 0 50px; padding: 65px 40px; text-align: center; border-top: 1px solid #9e8968; border-bottom: 1px solid #9e8968; cursor: pointer; transition: all 0.3s; }
+        .editorial-banner:hover { background: #364a30; }
         .editorial-banner h3 { font-family: 'Cormorant Garamond', serif; font-size: 2.7rem; color: #f2e6cc; }
         .editorial-banner .sub { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 8px; margin-top: 16px; color: #cbad72; }
         .footnote { max-width: 560px; margin: 24px auto 0; font-size: 0.8rem; color: #bfb28a; font-style: italic; }
         .two-col-grid { display: flex; gap: 36px; margin: 60px 0 70px; flex-wrap: wrap; }
-        .col-card { flex: 1; background: #2a3a24; border: 1px solid #7a6a4a; padding: 44px 28px; text-align: center; cursor: pointer; }
+        .col-card { flex: 1; background: #2a3a24; border: 1px solid #7a6a4a; padding: 44px 28px; text-align: center; cursor: pointer; transition: all 0.3s; }
         .col-card:hover { border-color: #c9a96e; background: #364a30; transform: translateY(-4px); }
-        .col-card .product-preview { width: 100%; max-width: 270px; height: 270px; margin: 0 auto 20px; overflow: hidden; background: #2c3824; border: 1px solid #b89860; }
-        .col-card .product-preview img { width: 100%; height: 100%; object-fit: cover; }
+        .col-card .product-preview { width: 100%; max-width: 270px; height: 270px; margin: 0 auto 20px; overflow: hidden; background: #2c3824; border: 1px solid #b89860; transition: all 0.3s; }
+        .col-card:hover .product-preview { border-color: #c9a96e; }
+        .col-card .product-preview img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .col-card:hover .product-preview img { transform: scale(1.03); filter: sepia(0); }
         .col-card .category-tag { font-size: 0.6rem; letter-spacing: 4px; color: #dbba7c; margin-bottom: 16px; text-transform: uppercase; }
         .col-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 500; margin-bottom: 20px; color: #f2e6cc; line-height: 1.2; }
-        .shop-link { display: inline-block; margin-top: 20px; text-decoration: none; font-size: 0.7rem; font-weight: 600; color: #dbba7c; border-bottom: 1px solid #dbba7c; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 3px; }
-        .sustainability-note { background: #2a3a24; border-top: 1px solid #9e8968; padding: 48px 30px; text-align: center; margin-top: 30px; }
+        .shop-link { display: inline-block; margin-top: 20px; text-decoration: none; font-size: 0.7rem; font-weight: 600; color: #dbba7c; border-bottom: 1px solid #dbba7c; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 3px; transition: all 0.2s; }
+        .shop-link:hover { letter-spacing: 4px; color: #efcd9a; }
+        .sustainability-note { background: #2a3a24; border-top: 1px solid #9e8968; padding: 48px 30px; text-align: center; margin-top: 30px; cursor: pointer; transition: all 0.3s; }
+        .sustainability-note:hover { background: #364a30; }
         .sustainability-note p { font-size: 0.68rem; letter-spacing: 3px; color: #dbba7c; text-transform: uppercase; }
         footer { padding: 55px 0 45px; border-top: 1px solid #7a6a4a; margin-top: 20px; background-color: #2c3824; }
         .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 45px; }
-        .footer-col p, .footer-col a { font-size: 0.7rem; color: #c0af82; text-decoration: none; line-height: 1.9; }
+        .footer-col p, .footer-col a { font-size: 0.7rem; color: #c0af82; text-decoration: none; line-height: 1.9; transition: color 0.2s; }
         .footer-col a:hover { color: #e6c48b; }
         .footer-col h5 { font-family: 'Cormorant Garamond', serif; font-weight: 600; margin-bottom: 20px; font-size: 1rem; color: #f1e0bc; }
         .copyright { text-align: center; margin-top: 55px; font-size: 0.6rem; color: #94845c; letter-spacing: 2px; }
@@ -103,7 +112,8 @@
 
 <section class="hero-ethiopia">
     <div class="container">
-        <div class="hero-image-wrapper">
+        <!-- Hero image clickable - goes to clothing page -->
+        <div class="hero-image-wrapper" onclick="location.href='clothing.html'">
             <img src="Screenshot%202026-05-01%20at%2012.38.55.png" alt="DINKSIRA Heritage">
         </div>
         <h2>DINKSIRA</h2>
@@ -115,31 +125,44 @@
 
 <div class="container">
     <div class="featured-grid">
+        <!-- Clothing - entire card clickable including image -->
         <div class="grid-item" onclick="location.href='clothing.html'">
-            <div class="product-image"><img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Clothing"></div>
+            <div class="product-image">
+                <img src="Screenshot%202026-05-01%20at%2012.51.41.png" alt="Clothing">
+            </div>
             <h3>Clothing</h3>
             <p>TIMELESS SILHOUETTES</p>
         </div>
+        <!-- Shoes - entire card clickable including image -->
         <div class="grid-item" onclick="location.href='shoes.html'">
-            <div class="product-image"><img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Shoes"></div>
+            <div class="product-image">
+                <img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Shoes">
+            </div>
             <h3>Shoes</h3>
             <p>ARCHIVAL FOOTWEAR</p>
         </div>
+        <!-- Dresses - entire card clickable including image -->
         <div class="grid-item" onclick="location.href='dresses.html'">
-            <div class="product-image"><img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Dresses"></div>
+            <div class="product-image">
+                <img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Dresses">
+            </div>
             <h3>Dresses</h3>
             <p>EFFORTLESS DRAPE</p>
         </div>
+        <!-- Tops - entire card clickable including image -->
         <div class="grid-item" onclick="location.href='tops.html'">
-            <div class="product-image"><img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Tops"></div>
+            <div class="product-image">
+                <img src="Screenshot%202026-05-01%20at%2012.47.07.png" alt="Tops">
+            </div>
             <h3>Tops</h3>
             <p>CLEAN LINES</p>
         </div>
     </div>
 </div>
 
+<!-- Editorial banner - clickable -->
 <div class="container">
-    <div class="editorial-banner">
+    <div class="editorial-banner" onclick="location.href='ourstory.html'">
         <h3>DINKSIRA</h3>
         <div class="sub">→ HANDMADE BY ETHIOPIANS</div>
         <div class="footnote">Every stitch tells a story. Crafted with heritage techniques, supporting local artisans and timeless traditions.</div>
@@ -148,34 +171,75 @@
 
 <div class="container">
     <div class="two-col-grid">
+        <!-- Clothing column - entire card clickable -->
         <div class="col-card" onclick="location.href='clothing.html'">
-            <div class="product-preview"><img src="Screenshot%202026-05-01%20at%2013.20.20.png" alt="Clothing woven with purpose"></div>
+            <div class="product-preview">
+                <img src="Screenshot%202026-05-01%20at%2013.20.20.png" alt="Clothing woven with purpose">
+            </div>
             <div class="category-tag">ETHIOPIAN CRAFT</div>
             <h4>Clothing<br>woven with purpose</h4>
-            <a href="clothing.html" class="shop-link">SHOP CLOTHING →</a>
+            <a href="clothing.html" class="shop-link" onclick="event.stopPropagation()">SHOP CLOTHING →</a>
         </div>
+        <!-- Shoes column - entire card clickable -->
         <div class="col-card" onclick="location.href='shoes.html'">
-            <div class="product-preview"><img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Shoes that carry heritage"></div>
+            <div class="product-preview">
+                <img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Shoes that carry heritage">
+            </div>
             <div class="category-tag">ARTISAN SOLE</div>
             <h4>Shoes that<br>carry heritage</h4>
-            <a href="shoes.html" class="shop-link">SHOP SHOES →</a>
+            <a href="shoes.html" class="shop-link" onclick="event.stopPropagation()">SHOP SHOES →</a>
         </div>
     </div>
 </div>
 
-<div class="sustainability-note">
-    <div class="container"><p>♢ DINKSIRA — HANDMADE BY ETHIOPIANS · SUPPORTING LOCAL COMMUNITIES · ETHICAL PRODUCTION ♢</p></div>
+<!-- Sustainability note - clickable goes to about page -->
+<div class="sustainability-note" onclick="location.href='ourstory.html'">
+    <div class="container">
+        <p>♢ DINKSIRA — HANDMADE BY ETHIOPIANS · SUPPORTING LOCAL COMMUNITIES · ETHICAL PRODUCTION ♢</p>
+    </div>
 </div>
 
 <footer>
     <div class="container">
         <div class="footer-inner">
-            <div class="footer-col"><h5>DINKSIRA</h5><p><a href="aboutus.html">About us</a></p><p><a href="#">Sustainability</a></p><p><a href="#">Our stores</a></p></div>
-            <div class="footer-col"><h5>Support</h5><p><a href="#">Help</a></p><p><a href="#">Returns</a></p><p><a href="#">Size guide</a></p></div>
-            <div class="footer-col"><h5>Connect</h5><p><a href="#">Newsletter</a></p><p><a href="#">Instagram</a></p></div>
+            <div class="footer-col">
+                <h5>DINKSIRA</h5>
+                <p><a href="aboutus.html">About us</a></p>
+                <p><a href="#">Sustainability</a></p>
+                <p><a href="#">Our stores</a></p>
+            </div>
+            <div class="footer-col">
+                <h5>Support</h5>
+                <p><a href="#">Help</a></p>
+                <p><a href="#">Returns</a></p>
+                <p><a href="#">Size guide</a></p>
+            </div>
+            <div class="footer-col">
+                <h5>Connect</h5>
+                <p><a href="#">Newsletter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
         </div>
         <div class="copyright">© 2025 DINKSIRA — Handmade by Ethiopians. Rooted in tradition, crafted for tomorrow.</div>
     </div>
 </footer>
+
+<script>
+    // Simple helper for any remaining clickable elements
+    (function() {
+        // Make all product images within grid items clickable if not already
+        const productImages = document.querySelectorAll('.product-image');
+        productImages.forEach(img => {
+            const parent = img.closest('.grid-item');
+            if (parent && !img.hasAttribute('data-clickable')) {
+                img.setAttribute('data-clickable', 'true');
+                img.style.cursor = 'pointer';
+            }
+        });
+        
+        // Log that images are clickable
+        console.log('All images are now clickable and will navigate to their respective pages');
+    })();
+</script>
 </body>
 </html>
