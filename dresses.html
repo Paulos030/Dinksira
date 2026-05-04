@@ -6,38 +6,139 @@
     <title>DINKSIRA — Dresses Collection</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #2c3824; color: #e8dfca; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-        .header { text-align: center; padding: 60px 0 30px; border-bottom: 1px solid #9e8968; }
-        .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: #f2e6cc; letter-spacing: 3px; }
-        .header p { color: #cbad72; margin-top: 10px; letter-spacing: 2px; }
-        .back-link { display: inline-block; margin: 20px 0; color: #dbba7c; text-decoration: none; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; }
-        .back-link:hover { color: #efcd9a; letter-spacing: 3px; }
-        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin: 50px 0; }
-        .product-card { background: #2a3a24; border: 1px solid #7a6a4a; padding: 30px; text-align: center; transition: 0.3s; }
-        .product-card:hover { border-color: #c9a96e; transform: translateY(-5px); }
-        .product-card img { width: 100%; max-width: 200px; height: auto; filter: sepia(0.15); }
-        .product-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin: 15px 0 5px; color: #f2e6cc; }
-        .product-card p { font-size: 0.8rem; color: #c7bc98; }
-        .price { color: #dbba7c; font-size: 1.1rem; margin-top: 10px; }
-        footer { text-align: center; padding: 40px; border-top: 1px solid #7a6a4a; margin-top: 40px; font-size: 0.7rem; color: #94845c; }
-        @media (max-width: 860px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #2c3824;
+            color: #e8dfca;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 0 30px;
+            border-bottom: 1px solid #9e8968;
+        }
+        .header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: #f2e6cc;
+            letter-spacing: 3px;
+        }
+        .header p {
+            color: #cbad72;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #dbba7c;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+        }
+        .back-link:hover {
+            color: #efcd9a;
+            letter-spacing: 3px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .product-card {
+            background: #2a3a24;
+            border: 1px solid #7a6a4a;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            border-color: #c9a96e;
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            filter: sepia(0.15);
+            transition: transform 0.3s;
+        }
+        .product-card:hover img {
+            transform: scale(1.03);
+            filter: sepia(0);
+        }
+        .product-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            margin: 15px 0 5px;
+            color: #f2e6cc;
+        }
+        .product-card p {
+            font-size: 0.8rem;
+            color: #c7bc98;
+        }
+        .price {
+            color: #dbba7c;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #7a6a4a;
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #94845c;
+        }
+        @media (max-width: 860px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <h1>DRESSES</h1>
-        <p>Effortless drape — artisan crafted</p>
-        <a href="index.html" class="back-link">← BACK TO HOME</a>
+    <div class="container">
+        <div class="header">
+            <h1>DRESSES</h1>
+            <p>Effortless drape — artisan crafted</p>
+            <a href="index.html" class="back-link">← BACK TO HOME</a>
+        </div>
+        <div class="product-grid">
+            <!-- Dress 1: Raw Edge Maxi Dress -->
+            <div class="product-card">
+                <img src="Screenshot%202026-05-04%20at%2007.06.41.png" alt="Raw Edge Maxi Dress">
+                <h3>Raw Edge Maxi Dress</h3>
+                <p>Hand-dyed cotton</p>
+                <div class="price">$329</div>
+            </div>
+            <!-- Dress 2: Asymmetric Wrap Dress -->
+            <div class="product-card">
+                <img src="Screenshot%202026-05-04%20at%2007.06.41.png" alt="Asymmetric Wrap Dress">
+                <h3>Asymmetric Wrap Dress</h3>
+                <p>Linen blend</p>
+                <div class="price">$279</div>
+            </div>
+            <!-- Dress 3: Slip Dress -->
+            <div class="product-card">
+                <img src="Screenshot%202026-05-04%20at%2007.06.41.png" alt="Slip Dress">
+                <h3>Slip Dress</h3>
+                <p>Silk habotai</p>
+                <div class="price">$219</div>
+            </div>
+        </div>
     </div>
-    <div class="product-grid">
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Maxi Dress"><h3>Raw Edge Maxi Dress</h3><p>Hand-dyed cotton</p><div class="price">$329</div></div>
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.48.50.png" alt="Wrap Dress"><h3>Asymmetric Wrap Dress</h3><p>Linen blend</p><div class="price">$279</div></div>
-        <div class="product-card"><img src="Screenshot%202026-05-01%20at%2012.47.58.png" alt="Slip Dress"><h3>Slip Dress</h3><p>Silk habotai</p><div class="price">$219</div></div>
-    </div>
-</div>
-<footer>© 2025 DINKSIRA — Handmade by Ethiopians</footer>
+    <footer>© 2025 DINKSIRA — Handmade by Ethiopians</footer>
 </body>
 </html>
